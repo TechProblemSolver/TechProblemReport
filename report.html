@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>TechProblemReport - TPR</title>
+    <style>
+      #problemInput {
+        border: 1px solid black;
+        width: 500px;
+        height: 20px;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      #reportProblem {
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 10px;
+      }
+      #problems {
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body onload="">
+    <center>
+      <h1>Report a Problem</h1><sub>* It has to do with problems you know can be solved with a website<button style="background-color: rgba(255, 255, 255, 0); color: black; border: 0px; padding: 0px; margin: 0px;" onclick="resetProblems()">.</button></sub>
+      <div id="problemInput" contenteditable="true"></div><button onclick="reportProblem" id="reportProblem">Report Problem</button>
+      <h1>Problems</h1>
+      <div id="problems">
+        
+      </div>
+    </center>
+    <script>
+      function loadProblems() {
+        document.getElementById('problems').innerHTML=`${localStorage["problems"]}`
+      }
+      function resetProblems() {
+        localStorage["problems"] = ''
+      }
+      function reportProblem() {
+        let problem = document.getElementById('problemInput').textContext;
+        let problemDetail = `
+       Problem: ${problem}<br>
+       Problem known: True
+       <hr>
+       <br>`
+        localStorage["problems"] += problemDetail
+      };
+    </script>
+  </body>
+</html>
