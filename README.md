@@ -25,7 +25,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/problem-solver.git
+   git clone https://github.com/techproblemsolver/problem-solver.git
 2. Write this in bash: ```cd problem-solver```
 3. With this: ```npm install```
 4. And lastly this: ```npm start```
