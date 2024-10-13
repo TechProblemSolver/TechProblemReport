@@ -1,6 +1,6 @@
 # Problem Solver Platform
 
-![Problem Solver](https://img.shields.io/badge/ProblemSolver-v1.0.0-brightgreen.svg)
+![Problem Solver](https://img.shields.io/badge/ProblemSolver-v0.1.0-brightgreen.svg) ![ProblemSolver](https://img.shields.io/badge/ProblemSolver-T&C's-red.svg)
 
 ## 🚀 Introduction
 
